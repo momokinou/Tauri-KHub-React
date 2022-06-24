@@ -1,13 +1,14 @@
 {
   "package": {
-    "productName": "react-tauri-vite-template",
+    "productName": "KHub Manga",
     "version": "0.1.0"
   },
   "build": {
     "distDir": "../dist",
     "devPath": "http://localhost:3000",
     "beforeDevCommand": "",
-    "beforeBuildCommand": ""
+    "beforeBuildCommand": "",
+    "withGlobalTauri": true
   },
   "tauri": {
     "bundle": {
