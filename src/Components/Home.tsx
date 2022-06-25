@@ -3,6 +3,7 @@ import { createContext, useContext, useState } from 'react';
 import { NavbarIsOpened } from '../Contexts/NavbarContext';
 import CustomButton, { TwitterButton } from './Button';
 import CustomHeader from './Header';
+import { WebsiteInput } from './Inputs';
 import CustomNavbar from './Navbar';
 import CustomTable from './Table';
 
@@ -26,7 +27,7 @@ function Home() {
             style={theme}
         >
         {
-            <><CustomTable /><TwitterButton /></>
+            <><WebsiteInput /><TwitterButton /></>
         }
         </AppShell>
         </NavbarIsOpened.Provider>

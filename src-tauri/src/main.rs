@@ -7,10 +7,10 @@ use tauri::Manager;
 use tauri::{CustomMenuItem, Menu, MenuItem, Submenu};
 use tauri::api::{shell};
 
-// #[tauri::command]
-// fn connect_to(url: String) {
-//   print!("string: {}", url);
-// }
+#[tauri::command]
+fn connect_to() {
+  println!("string: ahah");
+}
 
 
 fn generate_menu() -> Menu {
@@ -28,7 +28,8 @@ fn main() {
 
   tauri::Builder::default()
     .invoke_handler(tauri::generate_handler![
-      test
+      test,
+      connect_to
     ])
     .menu(menu)
     .on_menu_event(|event| {
