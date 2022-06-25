@@ -7,10 +7,12 @@ use tauri::Manager;
 use tauri::{CustomMenuItem, Menu, MenuItem, Submenu};
 use tauri::api::{shell};
 
-#[tauri::command]
-fn connect_to(url: String) {
-  print!("string: {}", url);
-}
+// #[tauri::command]
+// fn connect_to(url: String) {
+//   print!("string: {}", url);
+// }
+
+
 fn generate_menu() -> Menu {
   let discord = CustomMenuItem::new("discord".to_string(), "Discord");
   let github = CustomMenuItem::new("github".to_string(), "Github");

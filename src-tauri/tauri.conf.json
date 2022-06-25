@@ -58,6 +58,8 @@
         "title": "react-tauri-vite-template",
         "width": 800,
         "height": 600,
+        "minWidth": 350,
+        "minHeight": 500,
         "resizable": true,
         "fullscreen": false
       }
