@@ -1,14 +1,10 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react'
+import logo from './logo.svg'
 import './App.css'
-import { invoke } from '@tauri-apps/api';
-import { ActionIcon, AppShell, Aside, Burger, Footer, Group, Header, MantineProvider, MediaQuery, Navbar, ScrollArea, Text } from '@mantine/core';
-import { SunIcon, MoonIcon } from '@radix-ui/react-icons';
-import { ColorScheme, ColorSchemeProvider, createStyles, useMantineColorScheme, useMantineTheme } from '@mantine/styles';
-import { MemoryRouter, NavLink, Route, Routes } from 'react-router-dom'
+import { ColorScheme, ColorSchemeProvider, MantineProvider, useMantineTheme } from '@mantine/core';
+import { useLocalStorage } from '@mantine/hooks';
 import Home from './Components/Home';
-import { useHotkeys, useLocalStorage, useLocalStorageValue } from '@mantine/hooks';
 import toggleColorScheme from "./Components/Header"
-
 
 function App() {
 
@@ -25,7 +21,7 @@ function App() {
           <Home />
       </MantineProvider>
     </ColorSchemeProvider>
-  );
+  )
 }
 
 export default App
